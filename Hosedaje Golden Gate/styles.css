@@ -1,0 +1,196 @@
+/* Estilos generales */ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+}
+
+/* Contenedor principal */
+.hotel-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas de hoteles */
+.hotel-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hotel-card:hover {
+    transform: scale(1.02);
+}
+
+/* Imágenes de los hoteles */
+.hotel-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Información de los hoteles */
+.hotel-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Texto dentro de cada tarjeta */
+.hotel-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.rating {
+    color: #ffaa00;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Botón de opinión */
+.btn-precio {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.btn-precio:hover {
+    background-color: #e6b800;
+}
+
+/* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
+
+/* Para Tablets (Pantallas menores a 1024px) */
+@media screen and (max-width: 768px) {
+    .hotel-title {
+        font-size: 22px;
+    }
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto; /* Reduce la distancia desde la parte superior */
+    padding: 15px; /* Reduce el espacio interno */
+    border-radius: 10px;
+    width: 30%; /* Ajusta el ancho */
+    font-size: 14px; /* Reduce el tamaño del texto */
+}
+
+/* Ajuste para el título */
+.modal-content h2 {
+    font-size: 18px; /* Hace el título un poco más pequeño */
+    margin-bottom: 5px; /* Reduce espacio debajo del título */
+}
+
+/* Ajuste para el texto de la opinión */
+#modal-title {
+    font-size: 14px;
+    margin-bottom: 10px; /* Reduce el espacio debajo */
+}
+
+/* Ajuste para las estrellas */
+.star-rating {
+    font-size: 18px; /* Ajusta el tamaño de las estrellas */
+    margin-bottom: 10px; /* Reduce el espacio debajo */
+}
+
+/* Ajuste para el botón */
+.btn-enviar {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+/* Ajuste para las estrellas */
+.star-rating {
+    font-size: 24px; /* Aumenta el tamaño de las estrellas */
+    margin-bottom: 10px; /* Mantiene la separación adecuada */
+}
+
+/* Opcional: Ajuste para mejorar la interacción con las estrellas */
+.star {
+    cursor: pointer;
+    padding: 5px; /* Agrega un poco más de área de clic */
+}
+#modal-opinion {
+    position: fixed; /* Se mantiene fijo en la pantalla */
+    top: 10%; /* Lo posiciona en la parte superior */
+    left: 50%; /* Lo centra horizontalmente */
+    transform: translate(-50%, 0); /* Ajusta el centrado */
+    width: 400px; /* Tamaño del modal */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000; /* Se asegura de que esté encima de otros elementos */
+}
+
+/* Para asegurarnos de que no se muestre en una parte incorrecta */
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+  

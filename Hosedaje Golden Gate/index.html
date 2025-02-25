@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedaje Golden Gate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Ventana Flotante para Opiniones -->
+<!-- Ventana Flotante para Opiniones -->
+<div id="modal-opinion" class="modal">
+    <div class="modal-content">
+        <!-- Eliminamos la "X" del medio -->
+        <h2>Deja tu opinión</h2>
+        <p id="modal-title"></p>
+        
+        <!-- Sistema de Estrellas -->
+        <div class="star-rating">
+            <span class="star" onclick="calificar(1)">★</span>
+            <span class="star" onclick="calificar(2)">★</span>
+            <span class="star" onclick="calificar(3)">★</span>
+            <span class="star" onclick="calificar(4)">★</span>
+            <span class="star" onclick="calificar(5)">★</span>
+        </div>
+        
+        <button class="btn-enviar" onclick="cerrarModal()">Enviar</button>
+    </div>
+</div>
+
+
+<body>
+
+    <header>
+        <h1>
+            <img src="d:\Tareas u otros Juan\logo2.jpeg" alt="Logo Hospedaje Golden Gate" class="logo">
+        </h1>  
+        HOSPEDAJE GOLDEN GATE de Genoveva G. Tacza Rojas.     
+        <a href="https://wa.me/qr/YASCHRCOOIA5I1" target="_blank" class="btn-whatsapp">Contáctanos</a>
+    </header>
+    
+    
+
+    <div class="hotel-container">
+
+        <!-- Hotel 1 -->
+        <div class="hotel-card">
+            <img src="d:\Tareas u otros Juan\imgv3.jfif" alt="Cuartos con baño privado">
+            <div class="hotel-info">
+                <h2>1. Cuartos con baño privado</h2>
+                <p class="rating">POR FAVOR CALIFÍQUENOS</p>
+                <button class="btn-precio" onclick="Opinar('Cuartos con baño privado')">Opinar</button>
+                <p>Los cuartos con baño propio cuenta con televisor, cama de dos plasas, agua caliente y se le entrega una toalla y jabón.
+                Si desea más información no dude en consultarnos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-card">
+            <img src="d:\Tareas u otros Juan\img2v.jfif" alt="Cuartos con baño compartido">
+            <div class="hotel-info">
+                <h2>2. Cuartos con baño compartido</h2>
+                <p class="rating">POR FAVOR CALIFÍQUENOS </p>
+                <button class="btn-precio" onclick="Opinar('Cuartos con baño compartido')">Opinar</button>
+                <p>Los cuartos con baño compartido cuentan con televisor, baño en frente de la habitación, el servicio es opcional
+                    al entregar toalla y jabón. Si desea más información no dude en consultarnos. </p>
+            </div>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel-card">
+            <img src="d:\Tareas u otros Juan\img3.jfif" alt="Cuartos con cama doble y con baño privado">
+            <div class="hotel-info">
+                <h2>3. Cuartos con cama doble y con baño privado</h2>
+                <p class="rating">POR FAVOR CALIFÍQUENOS </p>
+                <button class="btn-precio" onclick="Opinar('Cuartos con cama doble y con baño privado')">Opinar</button>
+                <p>Los cuartos con cama doble cuenta con : televisor, dos camas una de dos plazas y otra de una plaza, en cuanto a la 
+                    atención se le entrega toalla y jabon y tambien  la cantidad es opcional.
+                </p>
+            </div>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div class="hotel-card">
+            <img src="d:\Tareas u otros Juan\img4.jfif" alt="Cuartos con cama doble con baño compartido">
+            <div class="hotel-info">
+                <h2>4.Cuartos con cama doble con baño compartido</h2>
+                <p class="rating">POR FAVOR CALIFÍQUENOS </p>
+                <button class="btn-precio" onclick="Opinar('Cuartos con cama doble con baño compartido')">Opinar</button>
+                <p> Los cuartos con cama doble cuenta con : televisor, dos camas una de dos plazas y la otra de una plaza, en cuanto a la 
+                    atención la entrega de toalla y jabon es opcional.
+                </p>
+            </div>
+        </div>
+
+        <!-- Hotel 5 -->
+        <div class="hotel-card">
+            <img src="d:\Tareas u otros Juan\img 5.jfif" alt="Nuestros Trabajadores">
+            <div class="hotel-info">
+                <h2>5. Nuestros Trabajadores</h2>
+                <p class="rating">POR FAVOR CALIFÍQUENOS</p>
+                <button class="btn-precio" onclick="Opinar('Nuestros Trabajadores')">Opinar</button>
+                <p>Nuestros trabajadores velan por su comodidad porque su comodidad nos interesa, contamos 4 trabajadores 
+                    dispuestos a atender sus necesidades y asegurarles la comodidad que necesita.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
